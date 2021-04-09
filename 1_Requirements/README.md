@@ -12,3 +12,24 @@ According to studies, music has therapeutic properties, and music therapy progra
 Music therapy has developed its practice and research approaches within a qualitative framework more related to humanistic traditions than to medical science. Music medicine has therefore developed as a separate discipline, endeavouring to incorporate the legitimate therapeutic use of music within a medical framework. There are papers that argue that more extensive communication and collaboration between the methods developed within the music therapy community, and research based on medical science, could lead to a better understanding of the place of music as a therapeutic tool, both as regards its efficacy and its limits. Research has shown that music may influence central physiological variables like blood pressure, heart rate, respiration, EEG measurements, body temperature and galvanic skin response. Music influences immune and endocrine function. The existing research literature shows growing knowledge of how music can ameliorate pain, anxiety, nausea, fatigue and depression. It is just much better when you listen to music based on your interests. This project helps you to 
 
 ## Functional Capabilities
+
+While adding a new song to your favourites playlist you have to mention certain attributes like the song name, the artist name and the platform on which this song is available(for eg., Spotify, Gaana etc.) 
+
+The following functions are implemented in this project
+- Add a song to the favourites playlist
+- Display all the available songs on the favourites playlist
+- List songs by a specific artist of you choice
+- Exit the program
+
+### Assumptions made
+There are already advanced version of this project available where music playlist recommendation is done by identifying user's emotions. This is just a base level project executed using Command Line Interface(CLI).
+
+## SWOT Analysis
+
+**S**- Large number of users since everyone listens to music these days and user can get to listen to new music suggested by different users
+
+**W**- UI is not visually appealing since it's run on terminal
+
+**O**- Advancement in technology might help to the application better combining with other technologies like AI
+
+**T**- Already advanced version of this application exists
