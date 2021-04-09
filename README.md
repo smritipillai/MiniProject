@@ -1,2 +1,2 @@
 # MiniProject
-Mini Project using C language
+Favourite Music playlist Management System using C programming language
