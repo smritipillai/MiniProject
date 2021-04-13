@@ -33,3 +33,20 @@ There are already advanced version of this project available where music playlis
 **O**- Advancement in technology might help to the application better combining with other technologies like AI
 
 **T**- Already advanced version of this application exists
+
+## 4sW's and 1H
+
+**WHO:**
+An user who wants to likes to keep a list of their favourite tracks.
+
+**WHAT:**
+A person's memory can retain very little information. Some information people tend to forget or misremember things. So for that purpose the user can keep a track of their favourite playlist.
+
+**WHEN:**
+As long as there's expanding data, this problem might exist all the time.
+
+**WHERE:**
+This sytem can be used by anyone with a laptop to enter, retrieve information from the stored data.
+
+**HOW:**
+During these advanced times, where data keeps expanding this system helps people to take a little information off their huge data.
