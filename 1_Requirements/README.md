@@ -22,6 +22,7 @@ The following functions are implemented in this project
 - Count the number of tracks available
 - Exit the program
 
+![alt text](https://github.com/smritipillai/MiniProject/blob/main/1_Requirements/Req_diag.png)
 ### Assumptions made
 There are already advanced version of this project available where music playlist recommendation is done by identifying user's emotions. This is just a base level project executed using Command Line Interface(CLI).
 
