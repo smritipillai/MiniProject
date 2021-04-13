@@ -50,3 +50,28 @@ This sytem can be used by anyone with a laptop to enter, retrieve information fr
 
 **HOW:**
 During these advanced times, where data keeps expanding this system helps people to take a little information off their huge data.
+
+ 
+## Detail Requirement
+
+### High-Level Requirement:
+
+| ID | Description | Category | Status |
+| ----- | ----------------  | ------ | ------- |
+| HR01 | addSong()  | Technical | TBD |
+| HR02 | displayPlaylist() | Technical | TBD |
+| HR03 | songsByArtist() | Technical | TBD |
+| HR04 | songByCategory() | Technical | TBD |
+| HR05 | countOfTracks() | Technical | TBD |
+| HR06 | exit() | Technical | TBD |
+
+### Low-Level Requirement:
+
+| ID | Description | HLR ID | Status |
+| ----- | ----------------  | ------ | ------- |
+| LR01 | Add new songs to the existing playlist | HR01 | TBD |
+| LR02 | Display the available songs in the playlist | HR02 | TBD |
+| LR03 | Display certain songs depending on factors like artist, category (happy, sad) | HR03, HR04 | TBD |
+| LR04 | Display the number of songs available in the playlist | HR05 | TBD |
+| LR05 | Exit from the system | HR06 | TBD |
+
