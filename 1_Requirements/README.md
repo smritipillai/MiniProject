@@ -18,7 +18,8 @@ While adding a new song to your favourites playlist you have to mention certain 
 The following functions are implemented in this project
 - Add a song to the favourites playlist
 - Display all the available songs on the favourites playlist
-- List songs by a specific artist of you choice
+- List songs by a specific artist/genre of you choice
+- Count the number of tracks available
 - Exit the program
 
 ### Assumptions made
@@ -28,7 +29,7 @@ There are already advanced version of this project available where music playlis
 
 **S**- Large number of users since everyone listens to music these days and user can get to listen to new music suggested by different users
 
-**W**- UI is not visually appealing since it's run on terminal
+**W**- UI is not visually appealing since it's a terminal application
 
 **O**- Advancement in technology might help to the application better combining with other technologies like AI
 
