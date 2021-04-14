@@ -1,6 +1,7 @@
 #include "header.h"
 
 int main() {
+    FILE *fptr;
     struct playlist p[1000];
     int i=0, n=0, count=0;
     while(n!=6) {
@@ -14,51 +15,74 @@ int main() {
         scanf("%d", &n);
         switch(n){
             case 1:  //Add new song
-            printf("Enter song name: \n");
-            scanf("%s", p[i].songName); 
+                fptr = fopen("playlist.dat", "ab");
+                if(fptr == NULL){
+                    fprintf(stderr, "\nError to write data into file");
+                    exit(1);
+                }
+                printf("Enter song name: \n");
+                scanf("%s", p[i].songName); 
+                fflush(stdin);
 
-            printf("Enter artist first name: \n");
-            scanf("%s", p[i].f_artist); 
+                printf("Enter artist first name: \n");
+                scanf("%s", p[i].f_artist); 
 
-            printf("Enter artist last name: \n");
-            scanf("%s", p[i].l_artist); 
+                printf("Enter artist last name: \n");
+                scanf("%s", p[i].l_artist); 
 
-            printf("Enter gender of artist (M/F): \n");
-            scanf("%s", p[i].gender);
+                printf("Enter gender of artist (M/F): \n");
+                scanf("%s", p[i].gender);
 
-            printf("Enter genre (Happy(H) / Emotional(E)): \n");
-            scanf("%s", p[i].genre);
+                printf("Enter genre (Happy(H) / Emotional(E)): \n");
+                scanf("%s", p[i].genre);
 
-            printf("Enter platform on which the song was streamed (Spotify(0), Saavn(1), Gaana(2)):\n ");
-            scanf("%d", &p[i].platform);
+                printf("Enter platform on which the song was streamed (Spotify(0), Saavn(1), Gaana(2)):\n ");
+                scanf("%d", &p[i].platform);
 
-            count++;
-            break;
+                count++;
+                fwrite(&p, sizeof(p), 1, fptr);
+                if(fwrite!=0)
+                    printf("Song has been added to playlist\n");
+                else
+                    printf("Error writing into file! \n");
+                fclose(fptr);
+                break;
 
             case 2: //display songs
-            printf("The songs available in your playlist are:\n");
-            for(i=0; i<count; i++){
-                printf("Song name : %s, ", p[i].songName);
-                printf("Artist first name : %s, ", p[i].f_artist);
-                printf("Artist last name : %s, ", p[i].l_artist);
-                printf("Genre : %s, ", p[i].genre);
-                printf("Streamed on : %d\n", p[i].platform);
-            }
-            break;
+                printf("The songs available in your playlist are:\n");
+                fptr = fopen("playlist.dat", "rb");
+                while((fread(&p, sizeof(p), 1, fptr))>0){
+                    printf("Song name : %s, ", p[i].songName);
+                    printf("Artist first name : %s, ", p[i].f_artist);
+                    printf("Artist last name : %s, ", p[i].l_artist);
+                    printf("Genre : %s, ", p[i].genre);
+                    printf("Streamed on : %d\n", p[i].platform);
+                    printf("\n-------------------------------------------\n");
+                }
+                fclose(fptr);
+                break;
 
             case 3: //List songs by particular artist
-            printf("Enter artist first name: \n");
-            char fname[50];
-            char lname[50];
-            scanf("%s", fname);
-            printf("Enter artist last name: \n");
-            scanf("%s", lname);
-            for(i=0; i<count; i++){
-                if(strcmp(fname, p[i].f_artist)==0 && strcmp(lname, p[i].l_artist)==0){
-                    printf("%s\n", p[i].songName);
+                fptr = fopen("playlist.dat","rb");
+                printf("Enter artist first name: \n");
+                char fname[50];
+                char lname[50];
+                scanf("%s", fname);
+                printf("Enter artist last name: \n");
+                scanf("%s", lname);
+                int t=0;
+                printf("The songs by the artist are: \n")
+                while((fread(&p,sizeof(p),1,fptr))>0){
+                    if(strcmp(fname, p[i].f_artist)==0 && strcmp(lname, p[i].l_artist)==0){
+                        printf("%s\n", p[i].songName);
+                        t=1;
+                    }
                 }
-            }
-            break;
+                fclose(fptr);
+                if(t==0){
+                    printf("\n\n Sorry! Songs from that artist isn't available in your playlist!\n");
+                }
+                break;
 
             case 4: //List songs by a particular genre
             printf("Enter genre (0-Happy / 1-Emotional): \n");
