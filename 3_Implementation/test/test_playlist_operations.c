@@ -40,7 +40,7 @@ void test_addSong(void){
 }
 
 void test_songsByGenre(void){
-    TEST_ASSERT_EQUAL(0, check(genre, "M"));
+    TEST_ASSERT_EQUAL(0, check(Genre, "M"));
 }
 
 void test_songsByArtist(void){
