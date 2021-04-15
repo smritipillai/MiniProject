@@ -13,7 +13,6 @@
 #define __HEADER_H__
 
 #include<stdio.h>
-//#include<conio.h>
 #include<stdlib.h>
 #include<string.h>
 
@@ -29,5 +28,35 @@ typedef struct playlist {
     char genre[1];
     int platform;
 } playlist;
+
+/**
+ * @brief Add new song to the playlist
+ * 
+ */
+void addSong();
+
+/**
+ * @brief Display the songs available in the playlist
+ * 
+ */
+void displayPlaylist();
+
+/**
+ * @brief Display songs by certain artist of user choice
+ * 
+ */
+void songsByArtist();
+
+/**
+ * @brief Display songs of certain genre of user choice
+ * 
+ */
+void songsByGenre();
+
+/**
+ * @brief Count of number of tracks already available in the playlist
+ * 
+ */
+void countOfTracks();
 
 #endif
