@@ -1,4 +1,4 @@
-#include  "../inc/header.h"
+#include  "header.h"
 
 int addSong(int count) {
     FILE *fptr;
@@ -36,7 +36,7 @@ int addSong(int count) {
         printf("Error writing into file! \n");
 
     fclose(fptr);
-    
+
     return count;
 }
 

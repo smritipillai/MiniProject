@@ -1,6 +1,8 @@
-#include "../inc/header.h"
-#include "../unity/unity.h"
-#include "../unity/unity_internals.h"
+#include "header.h"
+#include "unity.h"
+#include "unity_internals.h"
+
+#define PROJECT_NAME "MusicManagement"
 
 /* Required by the unity test framework */
 void setUp()

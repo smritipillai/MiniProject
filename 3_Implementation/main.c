@@ -1,4 +1,4 @@
-#include "inc/header.h"
+#include "header.h"
 
 void playlist_menu();
 //Start of the application
