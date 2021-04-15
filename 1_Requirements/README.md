@@ -63,7 +63,7 @@ During these advanced times, where data keeps expanding this system helps people
 | HR01 | addSong()  | Technical | TBD |
 | HR02 | displayPlaylist() | Technical | TBD |
 | HR03 | songsByArtist() | Technical | TBD |
-| HR04 | songByGenre() | Technical | TBD |
+| HR04 | songsByGenre() | Technical | TBD |
 | HR05 | countOfTracks() | Technical | TBD |
 | HR06 | exit() | Technical | TBD |
 
