@@ -97,12 +97,13 @@ void songsByGenre() {
         fprintf(stderr, "\nError to write data into file");
         exit(1);
     }
-    printf("Enter genre (0-Happy / 1-Emotional): \n");
+    printf("Enter genre (Happy(H) / Emotional(E)): \n");
+    printf("Type in H or E to proceed: \n");
     char g[1];
     scanf("%s", g);
     while((fread(&p,sizeof(p),1,fptr))>0){
         if(strcmp(g , p.genre)==0){
-            printf("%s %s\n", p.songName, p.f_artist);
+            printf("%s by %s\n", p.songName, p.f_artist);
             t=1;
         }
     }
