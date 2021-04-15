@@ -11,8 +11,12 @@ void tearDown()
 {
 }
 
-void test_menu(){
-    TEST_ASSERT_EQUAL(0, playlist_menu(0));
+void test_addSong() {
+    TEST_ASSERT_EQUAL(1, addSong(1));
+}
+
+void test_countOfTracks() {
+    TEST_ASSERT_EQUAL(1, countOfTracks(1));
 }
 
 int main(void)
@@ -21,7 +25,8 @@ int main(void)
     UNITY_BEGIN();
 
     /* Run Test functions */
-    RUN_TEST(test_menu);
+    RUN_TEST(test_addSong);
+    RUN_TEST(test_countOfTracks);
     
     /* Close the Unity Test Framework */
     return UNITY_END();
