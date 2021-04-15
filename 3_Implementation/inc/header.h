@@ -30,6 +30,13 @@ typedef struct playlist {
 } playlist;
 
 /**
+ * @brief playlist menu function
+ * 
+ */
+
+void playlist_menu(int r) 
+
+/**
  * @brief Add new song to the playlist
  * 
  */
