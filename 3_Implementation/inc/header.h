@@ -33,14 +33,13 @@ typedef struct playlist {
  * @brief playlist menu function
  * 
  */
-
-void playlist_menu(int r) 
+void playlist_menu();
 
 /**
  * @brief Add new song to the playlist
  * 
  */
-void addSong();
+int addSong(int count);
 
 /**
  * @brief Display the songs available in the playlist
@@ -64,6 +63,6 @@ void songsByGenre();
  * @brief Count of number of tracks already available in the playlist
  * 
  */
-void countOfTracks();
+void countOfTracks(int count);
 
 #endif

@@ -1,8 +1,6 @@
 #include  "../inc/header.h"
 
-int count=0;
-
-void addSong() {
+int addSong(int count) {
     FILE *fptr;
     struct playlist p;
     fptr = fopen("playlist.txt", "ab+");
@@ -38,6 +36,8 @@ void addSong() {
         printf("Error writing into file! \n");
 
     fclose(fptr);
+    
+    return count;
 }
 
 void displayPlaylist() {
@@ -113,6 +113,6 @@ void songsByGenre() {
     }
 }
 
-void countOfTracks() {
+void countOfTracks(int count) {
     printf("The count of songs available in your playlist are: %d \n", count);
 }

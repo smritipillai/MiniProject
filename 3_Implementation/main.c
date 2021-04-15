@@ -1,17 +1,17 @@
 #include "inc/header.h"
 
-void playlist_menu(int);
-
+void playlist_menu();
 //Start of the application
-int main(int argc, char *argv[]) {
-    int n=0,r=0;
+int main() {
+    int n=0;
     while(n!=6) {
-        playlist_menu(r);
+        playlist_menu();
     }
 }
 
-void playlist_menu(int r) {
+void playlist_menu() {
     int n;
+    static int count = 0;
     printf("\n 1. Add song to the playlist\n");
     printf("\n 2. Display songs available on the playlist\n");
     printf("\n 3. List songs by a particular artist\n");
@@ -19,11 +19,12 @@ void playlist_menu(int r) {
     printf("\n 5. List the count of songs available\n");
     printf("\n 6. Exit the system\n");
     printf("\n Enter one of the options from above: \n");
-    if(r==0)
-        scanf("%d", &n);
+    
+    scanf("%d", &n);
+    
     switch(n) {
         case 1:  //Add new song
-            addSong();
+            count = addSong(count);
             break;
 
         case 2: //display songs
@@ -39,7 +40,7 @@ void playlist_menu(int r) {
             break;
 
         case 5: //count of songs available
-            countOfTracks();
+            countOfTracks(count);
             break;
 
         case 6:
