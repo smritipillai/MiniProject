@@ -32,8 +32,8 @@ There are already advanced version of this project available where music playlis
 
 **W**- UI is not visually appealing since it's a terminal application
 
-**O**- Advancement in technology might help to the application better combining with other technologies like AI
-
+**O**- Advancement in technology might help to the application better combining with other technologies like AI, the application c
+an be advanced by making it a mobile application.
 **T**- Already advanced version of this application exists
 
 ## 4sW's and 1H
@@ -60,20 +60,20 @@ During these advanced times, where data keeps expanding this system helps people
 
 | ID | Description | Category | Status |
 | ----- | ----------------  | ------ | ------- |
-| HR01 | addSong()  | Technical | TBD |
-| HR02 | displayPlaylist() | Technical | TBD |
-| HR03 | songsByArtist() | Technical | TBD |
-| HR04 | songsByGenre() | Technical | TBD |
-| HR05 | countOfTracks() | Technical | TBD |
-| HR06 | exit() | Technical | TBD |
+| HR01 | addSong()  | Technical | Implemented |
+| HR02 | displayPlaylist() | Technical | Implemented |
+| HR03 | songsByArtist() | Technical | Implemented |
+| HR04 | songsByGenre() | Technical | Implemented |
+| HR05 | countOfTracks() | Technical | Implemented |
+| HR06 | exit() | Technical | Implemented |
 
 ### Low-Level Requirement:
 
 | ID | Description | HLR ID | Status |
 | ----- | ----------------  | ------ | ------- |
-| LR01 | Add new songs to the existing playlist | HR01 | TBD |
-| LR02 | Display the available songs in the playlist | HR02 | TBD |
-| LR03 | Display certain songs depending on factors like artist, genre (happy, sad) | HR03, HR04 | TBD |
-| LR04 | Display the number of songs available in the playlist | HR05 | TBD |
-| LR05 | Exit from the system | HR06 | TBD |
+| LR01 | Add new songs to the existing playlist | HR01 | Implemented |
+| LR02 | Display the available songs in the playlist | HR02 | Implemented |
+| LR03 | Display certain songs depending on factors like artist, genre (happy, emotional) | HR03, HR04 | Implemented |
+| LR04 | Display the number of songs available in the playlist | HR05 | Implemented |
+| LR05 | Exit from the system | HR06 | Implemented |
 
