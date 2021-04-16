@@ -52,9 +52,10 @@ codesize:
 
 $(BUILD_DIR):
 	mkdir $(BUILD_DIR)
+
 test:$(BUILD)
-		gcc $(TEST_SRC) $(INC) -o test_playlist_operations.$(EXEC)
-		./test_playlist_operations.$(EXEC)
+				gcc $(TEST_SRC) $(INC) -o test_playlist_operations.$(EXEC)
+				./test_playlist_operations.$(EXEC)
 valgrind:
 	valgrind ./test.$(EXEC)
 
