@@ -27,4 +27,6 @@ Favourite Music playlist Management System using C programming language.
 |6_ImagesAndVideos| Images/Vidoes of the application |
 |7_Other| Other work |
 
-### Some 
+### Some assumptions made:
+- While getting song name, enter the song as a single word, for eg, if the song name is "Hello World", enter it as "HelloWorld".
+- If the artist last name doesnt exist, ignore it by putting a hyphen(-).
