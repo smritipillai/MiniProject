@@ -34,6 +34,7 @@ There are already advanced version of this project available where music playlis
 
 **O**- Advancement in technology might help to the application better combining with other technologies like AI, the application c
 an be advanced by making it a mobile application.
+
 **T**- Already advanced version of this application exists
 
 ## 4sW's and 1H
